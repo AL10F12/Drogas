@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/drogas.min.css">
+
+    
+    <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+
+  
+  </style>
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+
+
+
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+
+     
+
+           
+<div data-role="page" id="bienvenida" data-theme="a">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center" >
+<img src="imagenes/drogas11.gif" width="652" height="350" align="center"> 
+    </div>
+    <div id="vista" align="center">
+<img  id="full_rex" src="imagenes/descarga.jpg" width="550" height="268" >
+    </div>
+
+	<audio id="roar" preload="auto" src="audio/roar.mp3">
+       </audio>
+    </div>
+    
+
+</div>
+  <div data-role="page" id="principal" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Las Drogas</h1>
+        <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+        
+	</div>
+    
+      
+
+
+     
+	<div data-role="content">	
+     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p>Una droga es todo fármaco o principio activo de un medicamento, elemento de origen biológico natural o producto obtenido de él por diversos métodos, o sustancia producida artificialmente, que produce efectos en el sistema nervioso central modificando el estado de ánimo o produciendo placer, y que puede tener potencial de abuso.2
+
+Este término también se utiliza, especialmente en el ámbito de la medicina y farmacología, como sinónimo de principio activo o fármaco, ya sea por extensión del concepto o debido a la traducción literal del término inglés drug, el cual no hace distinciones entre los tres términos. La definición original de la OMS refleja este uso genérico, sin embargo, la definición más específica indica que droga es el término más adecuado para referirse a sustancias que se usan sin fines terapéuticos; alteran aspectos afectivos, cognitivos y conductuales; pueden ser autoadministradas; y pueden inducir estados biológicos adaptativos en sus usuarios.3
+
+Desde esta última perspectiva, el sinónimo más adecuado para esta definición de droga es sustancia psicoactiva.4
+      </p>
+      <div align="center">
+<img src="imagenes/Drogas1.gif" width="590" height="392">
+</div>
+     </div>
+	</div>
+    
+	<div data-role="footer" data-position="fixed">
+
+	</div>
+    
+<!-- Panel Menu  -->
+  <div data-role="panel" id="defaultpanel" data-theme="a" data-display="overlay">
+ 
+    <div class="panel-content" align="center">
+      <h3>Menú</h3>
+<img src="imagenes/drogas11.gif" width="170" height="74">
+
+<div data-role="controlgroup">
+<a data-role="button" id="tipo">Tipos de drogas</a> 
+<a data-role="button" id="consecuencias">Consecuencias(imagenes)</a> 
+<a data-role="button" id="acerca">Acerca de</a>
+
+</div>
+
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a>
+    </div><!-- /contenido del panel-->
+  </div><!-- /panel de menu -->
+    
+    
+</div>
+
+
+<div data-role="page" id="drogas" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Tipos de drogas</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true" class="Vibrar">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/images.jpg" width="382" height="186">
+    <p> 
+    CANNABIS(MERIHUANA)
+    <br>
+    <br>
+Nombres coloquiales incluyen maría, chocolate, hachís, hierba, costo, mierda.
+El cannabis es una planta natural que se utiliza en tres formas principales. El tipo más común se llama la resina, que viene en bloques o trozos sólidos de color oscuro. El menos común son las hojas y los tallos de la planta, llamado hierba o maría. El tercer tipo, aceite de cannabis, apenas se ve en Irlanda.
+El cannabis se suele liar con tabaco formando un ‘porro’ o ‘canuto’ y fumar, pero también se puede cocinar y comer.
+Efectos – ‘Colocarse’ con cannabis te hace sentir relajado, hablador y feliz. Hay personas que sienten que el tiempo va más despacio y también hablan de una apreciación mayor de los colores, sonidos y sabores. Se puede sentir un apetito desmedido o hambre feroz llamado en inglés ‘the munchies’.
+Efectos secundarios – El cannabis puede afectar a la memoria y a la concentración y puede dejarte cansado y sin motivación. Si no estás acostumbrado al cannabis o tomas un tipo más fuerte al que estás habituado, puedes sentir ansiedad, pánico o confusión. O tener delirios o alucinaciones.
+<br>
+<br>
+Riesgos – Muchas personas consideran el cannabis una droga bastante segura. Sin embargo, las investigaciones demuestran que los consumidores a largo plazo pueden tener dificultades para controlar el consumo de la droga y pueden convertirse en adictos. Fumar cannabis aumenta el riesgo de enfermedades cardíacas y cánceres, como el de pulmón, y puede afectar a la fertilidad.
+<br>
+<br>
+<br>
+<br>
+<br>
+EXTASIS
+<br>
+<br>
+Entre los nombres coloquiales se encuentran: eva, adán, XTC, mitsubishis, supermanes.
+El éxtasis se suele elaborar en laboratorios clandestinos de algunos países europeos. Normalmente se vende en pastillas que tienen dibujados diversos logotipos o diseños. En ocasiones las pastillas de éxtasis pueden contener otras drogas y sustancias.
+<br>
+<br>
+Efectos – El éxtasis puede hacer que te sientas más alerta y sintonizado con el ambiente. Te sientes feliz y tranquilo, con una sensación de cariño hacia otras personas. Los sonidos, colores y emociones son más intensos. Tienes más energía, lo que te permite bailar durante períodos más largos de tiempo.
+Tu temperatura corporal, tensión arterial y ritmo cardíaco aumentan. Otros efectos físicos incluyen dolores musculares, náuseas, agarrotamiento de la mandíbula y rechinar de dientes. Puedes experimentar sudor profuso, temblores y palpitaciones. Puedes sentirte deshidratado, confuso y cansado.
+<br>
+<br>
+<br>
+<br>
+<br>
+HEROINA
+<br>
+<br>
+Entre los nombres coloquiales se hallan caballo, burro, jaco, nieve blanca.
+La heroína se elabora a partir de la morfina, una de las drogas que procede de la adormidera del opio. Se consume inyectándose o fumándose, lo que se llama ‘cazar al dragón’.
+<br>
+<br>
+Efectos – La inyección de heroína produce una ráfaga rápida de excitación seguida de una sensación de paz como en un sueño. Te sientes cariñoso, relajado y somnoliento. Los dolores, la agresión y la libido se ven reducidos.
+Entre los efectos secundarios de la heroína y otros opiatos (como la morfina y la metadona) se encuentran el estreñimiento y el debilitamiento de la respiración. Sin embargo, la mayoría de los peligros que acarrea la heroína provienen de la sobredosis o la inyección de la droga.
+<br>
+<br>
+Riesgos – Lo que se vende en la calle, como la heroína, a menudo contiene otras sustancias, como el azúcar, la harina, los polvos de talco y otras drogas. Estas sustancias pueden parecer inofensivas, pero pueden provocar lesiones enormes en el cuerpo, como coágulos de sangre, abscesos y gangrena, si se inyectan. El SIDA y la hepatitis B y C se pueden contagiar si se comparten las agujas. Consumir heroína de forma frecuente puede crear adicción, en especial si se inyecta la droga.
+<br>
+<br>
+<br>
+<br>
+<br>
+COCAINA
+<br>
+<br>
+Entre los nombres coloquiales se encuentran coca, nieve, farlopa.
+La cocaína es un polvo blanco que se elabora a partir de las hojas de la coca, una planta que crece principalmente en Suramérica. Se suele consumir inhalando el polvo a través de la nariz. El ‘crack’ no es una droga distinta, sino que es una forma más adictiva de la cocaína. El crack, también llamado ‘roca’, ‘piedra’ o ‘base libre’ se suele fumar. La cocaína a veces se inyecta o se come.
+<br>
+<br>
+Efectos – La cocaína es un potente estimulante. Te hace sentir más alerta y activo a la vez que reduce tu hambre y sed. Sus efectos pueden durar hasta 20 minutos después de cada toma. Fumar cocaína de crack ofrece un subidón más corto, pero más intenso.
+Debido a sus potentes efectos, los consumidores de cocaína con frecuencia desean tomar más. Las dosis grandes pueden hacerte sentir fatigado, ansioso y deprimido, además de agresivo en ocasiones.
+<br>
+<br>
+Riesgos – Esnifar cocaína puede causar un daño permanente en el interior de la nariz. El consumo de la cocaína puede dañar el corazón y los pulmones; las dosis grandes pueden provocar la muerte debido a infartos o coágulos de sangre. Tomar cocaína con alcohol aumenta el riesgo de sufrir un infarto y de muerte. Comer cocaína puede dañar el tejido intestinal. La depresión que sigue al subidón puede ser grave y conducir a tentativas de suicidio. Con un consumo exagerado o a largo plazo, la excitación que causa la cocaína puede convertirse en inquietud, pérdida de sueño y pérdida de peso. Hay personas que desarrollan una psicosis paranoica y pueden llegar a ser violentas. El fuerte síndrome de abstinencia de la cocaína, sobre todo del crack, puede hacer que quieras tomar toda la droga a la vez y puedes perder el control del grado de consumo de la droga.
+<br>
+<br>
+<br>
+<br>
+<br>
+DISOLVENTES
+<br>
+<br>
+El nombre coloquial es ‘esnifar pegamento’.
+Los disolventes incluyen productos que se encuentran en la mayoría de los hogares, como pegamentos, disolvente para pinturas, laca para uñas, combustibles ligeros y aerosoles, como desodorantes. Se pueden inhalar con un trapo húmedo, con la manga del abrigo o directamente del bote. Los aerosoles se aplica directamente a la boca. El abuso de los disolventes es común sobre todo entre los adolescentes. Para la mayoría de los adolescentes es una moda pasajera, pero puede provocar problemas enormes en la escuela y en casa.
+<br>
+<br>
+Efectos – Inhalar disolventes puede producir una sensación de subidón o de pasarlo bien similar a estar borracho. Los efectos pasan normalmente después de una media hora. Puedes parecer borracho, arrastrar las palabras, tambalearte, reírte y perder el control; a continuación te puedes sentir somnoliento
+Tu criterio se puede ver afectado y puedes volverte agresivo. También es común sufrir alucinaciones, vómitos y desmayos. Después de la toma, se tiene una resaca, con dolor de cabeza y dificultad para concentrarse.
+<br>
+<br>
+Riesgos – La muerte procedente del abuso de disolventes es rara, pero puede ocurrir por diversos motivos; por ejemplo la primera vez que se realiza la inhalación. Eres más propenso a sufrir accidentes bajo la influencia de disolventes. También puedes ahogarte o asfixiarte por la acción del disolvente inspirado por los pulmones, de tus vómitos o de los materiales que utilizas para inhalar. Muchos disolventes pueden causar insuficiencia cardiaca.
+<br>
+<br>
+<br>
+EXISTEN OTROS TIPOS MAS,PERO ESTOS SON LOS MAS CONOCIDOS
+    </p>
+    </div>
+	
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+<div data-role="page" id="Imagenes" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Consecuencias del consumo de drogas</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true" class="Vibrar">Menú</a>
+        </div>   
+	</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/weerf.jpg" width="275" height="183">
+    </div>
+    </div>
+    <p align="center">Las drogas traen muchas consecuencias,te afectan tanto fisica como mentalmente
+     </p>
+    <div data-role="content">	
+    <div align="center">
+     <img src="imagenes/consecuencias1.png" width="386" height="215" >
+    </div>
+</div>
+<p align="center">
+Hoy en dia,los jovenes no toman consiencia de lo importante que es decir "NO" a las drogas,no se ponen a pensar que "elevarse" un rato puede acabar con su vida para siempre.. </p>
+    <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/consecuencias5.jpg" width="386" height="215"><br>
+    </div>
+</div>
+<p align="center"> Las personas que consumen drogas,ya no toman consiencia de sus actos,ellos saben que su adiccion les afectara más de lo que ellos piensan.Existe gente que aun sufriendo los grandes y horribles efectos de las drogas,no dejan de consumirlas,no les importa nada mas que "sentirse felices por un rato" </p>
+    <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/consecuencias4.jpg" width="396" height="235"><br>
+    </div>
+</div>
+<p align="center">
+Mucha gente dice ser fuerte y es tipico de un adicto a las drogas decir:"A mi no me va a pasar nada",pero en el momento menos esperado,se encuentran en la cama de un hospital ó peor aun tirados en plena calle sin nadie que pueda ayudarlos...
+    <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/consecuencias2.jpg" width="396" height="235"><br>
+    </div>
+</div>
+<p align="center">
+Los efectos de las drogas empiezan a notarse principalmente en tu fisico,no en todas son los mismo efectos,en algunas adelgasas,pierdes mucho peso en muy poco tiempo,en ocaciones salen manchas,sale como salpullido entre otros..
+<br>
+Eh aqui ejemplo de unos casos
+ <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/consecuencias6.jpg" width="396" height="235"><br>
+    </div>
+</div>
+<br>
+ <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/consecuencias3.jpg" width="396" height="235"><br>
+    </div>
+</div>
+<p align="right">Fernanda Gonzalez </p>
+
+<div data-role="page" id="acercade" data-theme="a">
+	<div data-role="header" data-position="fixed">		
+    <h1>Acerca de</h1>
+                 <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true" class="Vibrar">Menú</a>
+        </div>
+       </div>  
+    <div data-role="content">
+    <div align="center">
+     <img src="imagenes/editada.jpg" width="417" height="360">
+    <div align="center">
+   <p>es una aplicacion la cual te da un poco de informacion sobre las drogas y las consecuencias del consumo de las mismas,tiene como objetivo hacer que los jovenes tomen conciencia de lo que hacen.</p>
+</div>
+</div>
+</div>
+</div>
+    </body>
+
+</html>
